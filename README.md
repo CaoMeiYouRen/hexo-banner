@@ -58,14 +58,9 @@ banner:
   content: |
     # 这是一段 banner
   position: top
-  styles: |
-    .hexo-banner {
-      background-color: #f8f8f8;
-      color: #333;
-      padding: 10px;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-    }
+  styles:
+    background-color: #f8f8f8
+    color: #333
 ```
 
 ## 🛠️ 开发

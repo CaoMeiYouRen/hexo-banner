@@ -31,7 +31,7 @@ export function bannerPlugin(hexo: Hexo) {
                     text-align: center;
                     border-bottom: 1px solid #ddd;
                 }`
-        const bannerStyles = config.styles || defaultStyles // 用户自定义的 CSS 样式
+        const bannerStyles = config.styles || {} // 用户自定义的 CSS 样式
 
         // 将 Markdown 内容转换为 HTML
         const bannerHtml = await marked(bannerContent)
