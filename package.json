@@ -1,6 +1,6 @@
 {
   "name": "hexo-banner",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Add a custom banner at the top of each page that supports HTML and Markdown formatted text content",
   "author": "CaoMeiYouRen",
   "private": false,
