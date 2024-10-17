@@ -1,5 +1,12 @@
 # hexo-banner
 
+## [1.0.2](https://github.com/CaoMeiYouRen/hexo-banner/compare/v1.0.1...v1.0.2) (2024-10-17)
+
+
+### 🐛 Bug 修复
+
+* 修复 样式文档错误 ([9b48ee1](https://github.com/CaoMeiYouRen/hexo-banner/commit/9b48ee1))
+
 ## [1.0.1](https://github.com/CaoMeiYouRen/hexo-banner/compare/v1.0.0...v1.0.1) (2024-10-17)
 
 
