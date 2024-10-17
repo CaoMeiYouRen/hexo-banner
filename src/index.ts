@@ -22,18 +22,16 @@ export function bannerPlugin(hexo: Hexo) {
         const config: BannerConfig = hexo.config.banner || {}
         const bannerContent = config.content || 'Default Banner Content'
         const bannerPosition = config.position || 'top' // 默认插入到 <header>
-        const bannerStyles = config.styles || {} // 用户自定义的 CSS 样式
-
         // 默认的 CSS 样式
         const defaultStyles = `
-.hexo-banner {
-    background-color: #f8f8f8;
-    color: #333;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-}
-        `
+                .hexo-banner {
+                    background-color: #f8f8f8;
+                    color: #333;
+                    padding: 10px;
+                    text-align: center;
+                    border-bottom: 1px solid #ddd;
+                }`
+        const bannerStyles = config.styles || defaultStyles // 用户自定义的 CSS 样式
 
         // 将 Markdown 内容转换为 HTML
         const bannerHtml = await marked(bannerContent)
