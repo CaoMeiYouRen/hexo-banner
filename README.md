@@ -23,7 +23,9 @@
 </p>
 
 
-> Add a custom banner at the top of each page that supports HTML and Markdown formatted text content
+> Add a custom banner at the top of each page that supports HTML and Markdown formatted text content.
+>
+> 在每个页面的顶部添加一个自定义的 Banner，支持 HTML 和 Markdown 格式的文本内容。
 
 ## 🏠 主页
 
@@ -43,8 +45,27 @@ npm install hexo-banner
 
 ## 👨‍💻 使用
 
-```sh
-npm run start
+在 `_config.yml` 中进行如下配置。
+
+`content` 支持 markdown。
+
+`position` 支持 `top` 或 `bottom`
+
+`styles` 设置 css
+
+```yml
+banner:
+  content: |
+    # 这是一段 banner
+  position: top
+  styles: |
+    .hexo-banner {
+      background-color: #f8f8f8;
+      color: #333;
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
 ```
 
 ## 🛠️ 开发
