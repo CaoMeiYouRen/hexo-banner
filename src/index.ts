@@ -15,6 +15,7 @@ export interface BannerConfig {
     content?: string
     position?: 'top' | 'bottom'
     styles?: any
+    css?: string
 }
 
 export function bannerPlugin(hexo: Hexo) {
@@ -22,6 +23,7 @@ export function bannerPlugin(hexo: Hexo) {
         const config: BannerConfig = hexo.config.banner || {}
         const bannerContent = config.content || 'Default Banner Content'
         const bannerPosition = config.position || 'top' // 默认插入到 <header>
+        const bannerCss = config.css || ''
         // 默认的 CSS 样式
         const defaultStyles = `
                 .hexo-banner {
@@ -30,7 +32,8 @@ export function bannerPlugin(hexo: Hexo) {
                     padding: 10px;
                     text-align: center;
                     border-bottom: 1px solid #ddd;
-                }`
+                }
+                ${bannerCss}`
         const bannerStyles = config.styles || {} // 用户自定义的 CSS 样式
 
         // 将 Markdown 内容转换为 HTML

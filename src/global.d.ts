@@ -6,6 +6,7 @@ declare module 'hexo' {
             content: string
             position: 'top' | 'bottom'
             styles: any
+            css: string
         }
     }
 }
