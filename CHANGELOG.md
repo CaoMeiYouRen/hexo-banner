@@ -1,5 +1,12 @@
 # hexo-banner
 
+# [1.1.0](https://github.com/CaoMeiYouRen/hexo-banner/compare/v1.0.2...v1.1.0) (2024-10-18)
+
+
+### ✨ 新功能
+
+* 增加 css 配置选项 ([e9f71cd](https://github.com/CaoMeiYouRen/hexo-banner/commit/e9f71cd))
+
 ## [1.0.2](https://github.com/CaoMeiYouRen/hexo-banner/compare/v1.0.1...v1.0.2) (2024-10-17)
 
 
