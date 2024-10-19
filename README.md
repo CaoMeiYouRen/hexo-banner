@@ -47,12 +47,6 @@ npm install hexo-banner
 
 在 `_config.yml` 中进行如下配置。
 
-`content` 支持 markdown。
-
-`position` 支持 `top` 或 `bottom`
-
-`styles` 设置 css
-
 ```yml
 banner:
   content: |
@@ -61,7 +55,21 @@ banner:
   styles:
     background-color: #f8f8f8
     color: #333
+  css: |
+    @media (min-width: 768px) {
+      .hexo-banner {
+        margin-left: 240px;
+      }
+    }
 ```
+
+
+| 属性     | 描述                                                         | 类型   | 可选值               |
+| -------- | ------------------------------------------------------------ | ------ | -------------------- |
+| `content` | 支持 Markdown 的内容。                                       | string | -                    |
+| `position` | 插入位置，支持插入到 header 或 footer 中。                   | string | `top` \| `bottom`    |
+| `styles`  | 设置行内样式，对象类型。                                     | object | -                    |
+| `css`     | 设置 CSS，字符串类型。                                       | string | -                    |
 
 ## 🛠️ 开发
 
