@@ -1,5 +1,12 @@
 # hexo-banner
 
+## [1.1.1](https://github.com/CaoMeiYouRen/hexo-banner/compare/v1.1.0...v1.1.1) (2025-01-14)
+
+
+### 🐛 Bug 修复
+
+* 移除全局类型定义并在 BannerConfig 中添加启用选项 ([5704f81](https://github.com/CaoMeiYouRen/hexo-banner/commit/5704f81))
+
 # [1.1.0](https://github.com/CaoMeiYouRen/hexo-banner/compare/v1.0.2...v1.1.0) (2024-10-18)
 
 
