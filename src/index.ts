@@ -12,6 +12,7 @@ import * as cheerio from 'cheerio'
 // }
 
 export interface BannerConfig {
+    enable?: boolean
     content?: string
     position?: 'top' | 'bottom'
     styles?: any
@@ -19,8 +20,11 @@ export interface BannerConfig {
 }
 
 export function bannerPlugin(hexo: Hexo) {
+    const config: BannerConfig = hexo.config.banner || {}
+    if (!config.enable) {
+        return
+    }
     hexo.extend.filter.register('after_render:html', async (data) => {
-        const config: BannerConfig = hexo.config.banner || {}
         const bannerContent = config.content || 'Default Banner Content'
         const bannerPosition = config.position || 'top' // 默认插入到 <header>
         const bannerCss = config.css || ''
