@@ -33,11 +33,10 @@ describe('bannerPlugin', () => {
             const config: BannerConfig = { enable: true }
             mockHexo.config.banner = config
             bannerPlugin(mockHexo)
-            // 模拟register方法调用并返回filter回调
+            // 获取最后一次register调用的回调函数
             const mockRegister = mockHexo.extend.filter.register as Mock
-            mockRegister.mockImplementation((_, callback) => {
-                filterCallback = callback
-            })
+            const calls = mockRegister.mock.calls
+            filterCallback = calls[calls.length - 1][1]
         })
 
         it('should insert banner at top by default', async () => {
