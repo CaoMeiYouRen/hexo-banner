@@ -62,4 +62,6 @@ export function bannerPlugin(hexo: Hexo) {
     })
 }
 
-bannerPlugin(hexo)
+if (typeof hexo !== 'undefined') {
+    bannerPlugin(hexo)
+}
