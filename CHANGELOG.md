@@ -1,5 +1,12 @@
 # hexo-banner
 
+## [1.1.2](https://github.com/CaoMeiYouRen/hexo-banner/compare/v1.1.1...v1.1.2) (2025-01-16)
+
+
+### 🐛 Bug 修复
+
+* 添加对 hexo 未定义的检查，确保 bannerPlugin 正常调用 ([84942c1](https://github.com/CaoMeiYouRen/hexo-banner/commit/84942c1))
+
 ## [1.1.1](https://github.com/CaoMeiYouRen/hexo-banner/compare/v1.1.0...v1.1.1) (2025-01-14)
 
 
