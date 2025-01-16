@@ -1,15 +1,6 @@
 import Hexo from 'hexo'
 import { marked } from 'marked'
 import * as cheerio from 'cheerio'
-// import debug from 'debug'
-
-// const Debugger = debug('hexo:banner')
-
-// const __DEBUG__ = process.env.NODE_ENV === 'development'
-
-// function logger(...args: any[]) {
-//     Debugger.log(...args)
-// }
 
 export interface BannerConfig {
     enable?: boolean
